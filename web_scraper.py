@@ -1,6 +1,6 @@
 import requests #Retrieves the information from the website
 from bs4 import BeautifulSoup #Helps in parsing the information from the website
-import matplotlib.pyplot as plt #Library to visualize the data collected
+import matplotlib.pyplot as plot #Library to visualize the data collected
 
 def main():
 
@@ -47,11 +47,11 @@ def main():
 
     #Displays the number of occurrences of each keyword as a bar graph
     print(keywords)
-    plt.bar(keywords.keys(), keywords.values()) 
-    plt.title("Web Scraper") 
-    plt.xlabel("Languages/Software") 
-    plt.ylabel("Number of Instances")
-    plt.show() 
+    plot.bar(keywords.keys(), keywords.values()) 
+    plot.title("Web Scraper") 
+    plot.xlabel("Languages/Software") 
+    plot.ylabel("Number of Instances")
+    plot.show() 
 
 
 if __name__ == "__main__":
